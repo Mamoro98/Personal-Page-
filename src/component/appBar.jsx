@@ -7,33 +7,31 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import HomeIcon from '@mui/icons-material/Home';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
-const pages = ['Home', 'About', 'Projects','Skills','Contact Me'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const pages = ['Home', 'About', 'Projects','Skills','Contact Me'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -81,7 +79,7 @@ const ResponsiveAppBar = () => {
                 horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              onClose={handleOpenNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
@@ -160,7 +158,7 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleCloseUserMenu}
+               onClick={handleOpenNavMenu}
                sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Home
@@ -176,7 +174,7 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleCloseUserMenu}
+               onClick={handleOpenNavMenu}
                sx={{ my: 2, color: 'white', display: 'block' }}
              >
              About
@@ -192,7 +190,7 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleCloseUserMenu}
+               onClick={handleOpenNavMenu}
                sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Projects
@@ -208,7 +206,7 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleCloseUserMenu}
+               onClick={handleOpenNavMenu}
                sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Skills
@@ -223,7 +221,7 @@ const ResponsiveAppBar = () => {
                     offset={-70}
                     duration={500}
                   >                    <Button
-               onClick={handleCloseUserMenu}
+               onClick={handleOpenNavMenu}
                sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Contact Me
