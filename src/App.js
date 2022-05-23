@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import AppBar from "./component/appBar"
+import Card from "./component/Card"
+import Cardtwo from "./component/Cardtwo"
+import Cardthree from "./component/Cardthree"
+import Skills from "./component/Skills"
+import Socialfollow from "./component/Socialfollow"
+import "animate.css/animate.min.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <>
+      <AppBar></AppBar>
+      <Card></Card>
+      <AnimationOnScroll animateIn="animate__fadeInDown" offset="1">
+
+      <Cardtwo  ></Cardtwo>
+      </AnimationOnScroll>
+      <AnimationOnScroll  animateIn="animate__fadeInDown" offset="1">
+      <Cardthree></Cardthree>
+      </AnimationOnScroll>
+      <h1 style={{ textAlign: "center" }}>Skills</h1>
+      <AnimationOnScroll animateIn="animate__fadeInDown"
+      animateOut=""
+      >
+      <Skills></Skills>
+      </AnimationOnScroll>
+      <h1 style={{ textAlign: "center" }}>Contact Me</h1>
+      
+      
+      <Socialfollow></Socialfollow>
+      {/* const pages = ['Home', 'About', 'Projects','Skills','Contact Me']; */}
+
+    </>
   );
 }
 
