@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faYoutube,
     faFacebook,
     faTwitter,
     faInstagram
@@ -13,20 +12,15 @@ import {
           <div className="social-container"
           id="Contact Me" 
           >
-                <a href="https://www.youtube.com/c/jamesqquick"
-                  className="youtube social"
-                  id="Skills"
-              >
-                    <FontAwesomeIcon icon={faYoutube} size="2x" />
-                </a>
-                <a href="https://www.facebook.com/learnbuildteach/"
+                
+                <a href="https://www.facebook.com/omer.mamoro/"
                     className="facebook social">
                     <FontAwesomeIcon icon={faFacebook} size="2x" />
                 </a>
-                <a href="https://www.twitter.com/jamesqquick" className="twitter social">
+                <a href="https://twitter.com/omerkamalmamoro" className="twitter social">
                     <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
-                <a href="https://www.instagram.com/learnbuildteach"
+                <a href="https://www.instagram.com/omer_mamoro/"
                     className="instagram social">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>

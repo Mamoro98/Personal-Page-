@@ -25,17 +25,17 @@ const ResponsiveAppBar = () => {
   //   setAnchorElUser(event.currentTarget);
   // };
 
-  // const handleCloseNavMenu = () => {
-  //   setAnchorElNav(null);
-  // };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
   // const handleCloseUserMenu = () => {
   //   setAnchorElUser(null);
   // };
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+    <AppBar position="fixed" >
+      <Container maxWidth="xl" >
+        <Toolbar disableGutters >
           <HomeIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
@@ -79,18 +79,26 @@ const ResponsiveAppBar = () => {
                 horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
-              onClose={handleOpenNavMenu}
+              onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
             >
-
-                <MenuItem  >
+              <Link
+                    activeClass="active"
+                    to="Home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+              <MenuItem  onClick={handleCloseNavMenu}>
+              
                     <Typography textAlign="center">Home</Typography>
               </MenuItem>
-              <MenuItem  >
-                <Typography textAlign="center">
-                  <Link
+              </Link>
+
+              <Link
                     activeClass="active"
                     to="About"
                     spy={true}
@@ -98,21 +106,62 @@ const ResponsiveAppBar = () => {
                     offset={-70}
                     duration={500}
                   >
+              <MenuItem
+                onClick={handleCloseNavMenu}
+                LinkComponent="About"
+              >
+                <Typography textAlign="center">
+                  
                   About
-                  </Link>
                   
                 </Typography>
               </MenuItem>
-              <MenuItem  >
+              </Link>
+              <Link
+                    activeClass="active"
+                    to="Projects"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+              <MenuItem
+                onClick={handleCloseNavMenu}
+              
+              >
+             
                     <Typography textAlign="center">Projects</Typography>
               </MenuItem>
-              <MenuItem  >
+              </Link>
+              <Link
+                    activeClass="active"
+                    to="Skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+              <MenuItem  onClick={handleCloseNavMenu}>
+             
                     <Typography textAlign="center">Skills</Typography>
               </MenuItem>
-              <MenuItem  >
+              </Link>
+
+              <Link
+                    activeClass="active"
+                    to="Skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+              <MenuItem onClick={handleCloseNavMenu} >
+              
+                
                     <Typography textAlign="center">Contact Me</Typography>
               </MenuItem>
-              
+              </Link>
+
 
               {/* {pages.map((page) => (
                 <HashLink to= "#${page}" >
@@ -158,8 +207,8 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleOpenNavMenu}
-               sx={{ my: 2, color: 'white', display: 'block' }}
+                          onClick={handleCloseNavMenu}
+                          sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Home
              </Button>
@@ -174,8 +223,8 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleOpenNavMenu}
-               sx={{ my: 2, color: 'white', display: 'block' }}
+                          onClick={handleCloseNavMenu}
+                          sx={{ my: 2, color: 'white', display: 'block' }}
              >
              About
              </Button>
@@ -190,8 +239,8 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleOpenNavMenu}
-               sx={{ my: 2, color: 'white', display: 'block' }}
+                          onClick={handleCloseNavMenu}
+                          sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Projects
              </Button>
@@ -206,8 +255,8 @@ const ResponsiveAppBar = () => {
                     duration={500}
                   >
                     <Button
-               onClick={handleOpenNavMenu}
-               sx={{ my: 2, color: 'white', display: 'block' }}
+                        onClick={handleCloseNavMenu}
+                        sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Skills
              </Button>
@@ -220,9 +269,9 @@ const ResponsiveAppBar = () => {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                  >                    <Button
-               onClick={handleOpenNavMenu}
-               sx={{ my: 2, color: 'white', display: 'block' }}
+            >
+              <Button
+              onClick={handleCloseNavMenu} sx={{ my: 2, color: 'white', display: 'block' }}
              >
              Contact Me
              </Button>

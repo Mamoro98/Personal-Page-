@@ -29,7 +29,7 @@ import Box from '@mui/material/Box';
       <CardActionArea>
         <CardMedia
           component="img"
-          image={require("./moro.jpg")}
+          image={require("./eeese1.jpg")}
           alt="green iguana"
           
         />

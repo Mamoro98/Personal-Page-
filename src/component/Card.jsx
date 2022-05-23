@@ -11,13 +11,17 @@ export default function ActionAreaCard() {
             height: 300,
         }
     };
-    return (
-        <Box
+  return (
+      <div
+      style={{padding:"20px"}}
+      >
+      <Box
         display="flex"
         justifyContent="center"
         alignItems="center"
         minHeight="90vh"
-        id = "Home"
+        id="Home"
+       
         >
             
     <Card  sx={{ maxWidth: 400 }}  >
@@ -39,6 +43,7 @@ export default function ActionAreaCard() {
         </CardContent>
       </CardActionArea>
             </Card>
-            </Box>
+      </Box>
+      </div>
   );
 }

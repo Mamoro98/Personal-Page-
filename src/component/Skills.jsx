@@ -18,28 +18,28 @@ import Typography from '@mui/material/Typography';
                >
                     <CardContent>
                         <Typography gutterBottom variant="h4" component="div">
-                            Omer Kamal
+                            React
                         </Typography>
                     </CardContent>
            </Grid>
            <Grid item xs={2}>
                     <CardContent>
                         <Typography gutterBottom variant="h4" component="div">
-                            Omer Kamal
+                            Flutter
                         </Typography>
                     </CardContent>
            </Grid>
            <Grid item xs={2}>
                     <CardContent>
                         <Typography gutterBottom variant="h4" component="div">
-                            Omer Kamal
+                            Data Analysis
                         </Typography>
                     </CardContent>
            </Grid>
            <Grid item xs={2}>
                     <CardContent>
                         <Typography gutterBottom variant="h4" component="div">
-                            Omer Kamal
+                            Machine Learning
                         </Typography>
                     </CardContent>
             </Grid>
@@ -53,28 +53,28 @@ import Typography from '@mui/material/Typography';
               <Grid item xs={2}>
                        <CardContent>
                            <Typography gutterBottom variant="h4" component="div">
-                               Omer Kamal
+                               Problem Solving
                            </Typography>
                        </CardContent>
               </Grid>
               <Grid item xs={2}>
                        <CardContent>
                            <Typography gutterBottom variant="h4" component="div">
-                               Omer Kamal
+                               Pewee / CheryPy
                            </Typography>
                        </CardContent>
               </Grid>
               <Grid item xs={2}>
                        <CardContent>
                            <Typography gutterBottom variant="h4" component="div">
-                               Omer Kamal
+                               Computer Vision
                            </Typography>
                        </CardContent>
               </Grid>
               <Grid item xs={2}>
                        <CardContent>
                            <Typography gutterBottom variant="h4" component="div">
-                               Omer Kamal
+                               Adobe Photoshop / Adobe Illustrator 
                            </Typography>
                        </CardContent>
                </Grid>
