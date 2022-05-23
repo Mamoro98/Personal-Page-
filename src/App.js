@@ -14,7 +14,6 @@ function App() {
       <AppBar></AppBar>
       <Card></Card>
       <AnimationOnScroll animateIn="animate__fadeInDown" offset="1">
-
       <Cardtwo  ></Cardtwo>
       </AnimationOnScroll>
       <AnimationOnScroll  animateIn="animate__fadeInDown" offset="1">
